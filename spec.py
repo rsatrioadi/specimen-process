@@ -1,4 +1,5 @@
 import sys
+import os
 from PIL import Image
 
 def brightness(R,G,B):
@@ -16,5 +17,5 @@ for fname in sys.argv[1:]:
             pixelsNew[i,j] = (0,0,0,int((1-brightness(c[0],c[1],c[2]))*255))
             
     im1.close()
-    im2.save(fname+".out.png") 
+    im2.save(os.path.splitext(fname)[0]+".out.png") 
     im2.close()

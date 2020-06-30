@@ -1,4 +1,5 @@
 import sys
+import os
 from PIL import Image
 
 for fname in sys.argv[1:]:
@@ -6,9 +7,9 @@ for fname in sys.argv[1:]:
     pixelMap = im1.load()
 
     imin = 0
-    imax = im1.size[0]
+    imax = im1.size[0]-1
     jmin = 0
-    jmax = im1.size[1]
+    jmax = im1.size[1]-1
     for i in range(im1.size[0]):
         for j in range(im1.size[1]):
             t = pixelMap[i,j][3]
@@ -49,5 +50,5 @@ for fname in sys.argv[1:]:
     im2 = im1.crop((imin,jmin,imax,jmax))
 
     im1.close()
-    im2.save(fname+".crp.png") 
+    im2.save(os.path.splitext(fname)[0]+".crp.png") 
     im2.close()
