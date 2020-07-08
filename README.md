@@ -4,7 +4,7 @@ Langkah-langkah:
 
 2. Jalankan `python3 spec.py <namafile>.jpg` untuk membuat file ttd yang background-nya transparan. Hasilnya jadi `<namafile>.out.png`
 
-3. Jalankan `python3 crop.py <namafile>.out.png` untuk membuang _padding_ pixel kosong di kanan-kiri atas-bawah ttd. Hasilnya jadi `<namafile>.out.crp.png`
+3.1. Jalankan `python3 crop.py <namafile>.out.png` untuk membuang _padding_ pixel kosong di kanan-kiri atas-bawah ttd. Hasilnya jadi `<namafile>.out.crp.png`
 
 ATAU
 
