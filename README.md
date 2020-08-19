@@ -9,3 +9,6 @@ Langkah-langkah:
 ATAU
 
 3. (2) Jalankan `python3 resize.py <x> <y> <namafile>.out.png` untuk me-_resize_ gambar menjadi berukuran `x` pixel × `y` pixel. Hasilnya jadi `<namafile>.out.rsz.png`
+
+
+Catatan: semua bisa pakai wildcard, contoh: `python3 crop.py *.out.png`.
